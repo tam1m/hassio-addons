@@ -1,0 +1,28 @@
+#!/usr/bin/with-contenv bashio
+# shellcheck disable=SC2191
+# ==============================================================================
+# Community Hass.io Add-ons: Sundtek TV
+# Runs the Sundtek TV Mediasrv
+# ==============================================================================
+
+# Wait for rtspd to become available
+#bashio::net.wait_for 22000
+
+bashio::log.info 'Starting Sundtek mediasrv...'
+
+options_mediasrv+=(-c /config/sundtek.conf)
+options_mediasrv+=(-v)
+
+options_rtspd+=(-c /config/)
+#options_rtspd+=(-d)
+
+
+
+# Run mediasrv
+exec /opt/bin/mediasrv "${options_mediasrv[@]}"
+#exec /opt/bin/rtspd "${options_rtspd[@]}" 1>/dev/null & /opt/bin/mediasrv  "${options_mediasrv[@]}"
+
+
+
+
+

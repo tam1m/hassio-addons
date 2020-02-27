@@ -1,0 +1,31 @@
+{
+  "name": "1&1 TV",
+  "version": "1.0",
+  "slug": "1und1tv",
+  "description": "1und1 TV Network Server",
+  "arch": ["armv7"],
+  "startup": "system",
+  "boot": "auto",
+  "host_network": true,
+  "webui": "http://[HOST]:[PORT:55100]/?file=channels.m3u&bw=8000&platform=hls5",
+  "options": {
+    "provider": null,
+    "login": null,
+    "password": null,
+    "youth_protection_pin": null,
+    "interface": "eth0",
+    "port": "55100",
+    "ssl_mode": "1",
+    "server": "1und1-dor1101-1"
+  },
+  "schema": {
+    "provider": "str",
+    "login": "str",
+    "password": "str",
+    "youth_protection_pin": "str",
+    "interface": "str",
+    "port": "int",
+    "ssl_mode": "int",
+    "server": "str?"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Sundtek TV",
+  "version": "1.0",
+  "slug": "sundtek",
+  "description": "Sundtek TV Network Server",
+  "arch": ["armv7"],
+  "startup": "system",
+  "boot": "auto",
+  "host_network": false,
+  "webui": "http://[HOST]:[PORT:22000]",
+  "options": { },
+  "schema": { },
+  "devices": [
+    "/dev/bus/usb:/dev/bus/usb:rwm",
+    "/dev/dvb:/dev/dvb:rwm"
+  ],
+  "full_access": false,
+  "map" : ["config:rw"],
+  "ports": {
+    "22000/tcp": 22000,
+    "553/tcp" : 553
+  },
+  "ports_description": {  
+    "22000/tcp": "Streamingserver Webinterface",
+    "553/tcp" : "RTSP"
+  }
+}

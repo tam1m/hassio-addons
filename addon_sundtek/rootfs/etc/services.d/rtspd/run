@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bashio
+# shellcheck disable=SC2191
+# ==============================================================================
+# Community Hass.io Add-ons: Sundtek TV
+# Runs the Sundtek TV Server
+# ==============================================================================
+
+bashio::log.info 'Starting Sundtek RTSPD...'
+
+options+=(-c /config/)
+#options+=(-d)
+
+
+# Run RTSPD
+exec /opt/bin/rtspd "${options[@]}" 1>/dev/null

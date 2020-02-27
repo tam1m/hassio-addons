@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bashio
+# shellcheck disable=SC2191
+# ==============================================================================
+# Community Hass.io Add-ons: 1&1 TV
+# Runs the Telerising Server
+# ==============================================================================
+
+bashio::log.info 'Starting Telerising Server...'
+
+
+# Run Telerising
+
+exec /entrypoint.sh
