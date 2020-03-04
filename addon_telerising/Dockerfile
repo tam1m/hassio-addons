@@ -32,6 +32,7 @@ RUN  cpan install JSON \
  && cpan install IO::Interface::Simple \
  && cpan install IO::Socket::SSL \
  && cpan install IO:Tee \
+ && cpan install Log::Log4perl \
  && cpan install Mozilla::CA \
  && cpan install Encode \
  && cpan install POSIX \
