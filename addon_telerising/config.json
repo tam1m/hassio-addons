@@ -1,6 +1,6 @@
 {
   "name": "1&1 TV",
-  "version": "1.3",
+  "version": "1.4",
   "slug": "1und1tv",
   "description": "1und1 TV Network Server",
   "arch": ["armv7"],
@@ -16,7 +16,15 @@
     "interface": "eth0",
     "port": "55100",
     "ssl_mode": "1",
-    "server": "1und1-dor1101-1"
+    "server": "1und1-dor1101-1",
+    "platform": "hls5",
+    "bw": "8000",
+    "profile": "1",
+    "audio2": "false",
+    "dolby": "false",
+    "ignore_maxrate": "false",
+    "loglevel": "info"
+    
   },
   "schema": {
     "provider": "str",
@@ -26,6 +34,13 @@
     "interface": "str",
     "port": "int",
     "ssl_mode": "int",
-    "server": "str?"
+    "server": "str",
+    "platform": "str",
+    "bw": "int",
+    "profile": "int",
+    "audio2": "bool",
+    "dolby": "bool",
+    "ignore_maxrate": "bool",
+    "loglevel": "str"
   }
 }

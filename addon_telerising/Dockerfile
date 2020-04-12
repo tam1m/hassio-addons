@@ -38,7 +38,7 @@ RUN  cpan install JSON \
  && cpan install POSIX \
  && cpan install utf8
   
-ARG version="0.3.3"
+ARG version="0.3.4"
 
 RUN cd ~ \
  && curl "https://github.com/sunsettrack4/telerising/archive/v${version}.zip" -L -o v${version}.zip \
