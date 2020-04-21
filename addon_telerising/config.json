@@ -1,6 +1,6 @@
 {
   "name": "1&1 TV",
-  "version": "1.4",
+  "version": "1.5",
   "slug": "1und1tv",
   "description": "1und1 TV Network Server",
   "arch": ["armv7"],
